@@ -1,77 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8 /">
-        <title>Bai kiem tra HTML - hau </title>
-      <html>
-      <head>
-      <style>
-      table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      </style>
-      </head>
-      <body>
-      
-      <h1>Bai kiem tra HTML - mon thiet ke web</h1>
-      <h2>
-        <form action="">
-          <table>
-              <tr>
-                  <td colspan="2"> <span style="font-weight: bold;"> ĐĂNG KÝ </span> </td>
-              </tr>
-              <tr>
-                  <td>
-                      <label for="fname"> Họ tên </label><br>
-                 
-                  </td>
-                  <td>
-                      <input type="text" id="fname" name="fname" value=" Họ tên "><br>
-                  </td>
-              </tr>  
-              <tr>
-                  <td>
-                      <label for="lname"> Usename</label><br>
-                  </td>
-                  <td>
-                      <input type="text" id="lname" name="lname" value=" Tên đăng nhập "><br>
-                  </td>
-              </tr>
-                  <tr>
-                      <td> 
-                          <label for="lname"> Mật khẩu </label><br> 
-                      </td>
-                      <td>
-                          <input type="text" id="lname" name="lname" value=" Mật khẩu "><br>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td> 
-                          <label for="lname"> Nhập lại mật khẩu </label><br> 
-                      </td>
-                      <td>
-                          <input type="text" id="lname" name="lname" value=" Nhập lại mật khẩu "><br>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>
-                          Giới tính 
-                      </td>
-                      <td>
-                            <input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html"> Nam </label><br>
-                            <input type="radio" id="css" name="fav_language" value="CSS">
-                            <label for="css"> Nữ </label><br>
-                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                            <label for="javascript"> Khác </label><br>
-                      </td>
-                  </tr>
+<!doctype ... >
+<html>
+    <head>
+        <title> Bài kiểm tra HTML - môn học thiết kế web </title>
+        <style>
+               table, tr, td {
+              border: 1px solid black;
+            }
+            table.center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+                          <link rel="stylesheet" href="stay.css">
 
-        </tr>
-        
-    
-      </table>
-      
-      </body>
-      </html>
-      
+    </head>
+    <body>
+        <form action="">
+        <table>
+            <tr>
+                <th colspan="2"> <span style="font-weight: bold;"> ĐĂNG KÝ </span> </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fname">Họ tên</label>
+               
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname" placeholder=" Họ tên "style="padding: 5PX;"><br>
+                    
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    <label for="lname1"> Usename</label><br>
+                </td>
+                <td>
+                    <input type="text" id="lname1" name="lname1" placeholder=" Tên đăng nhập "style="padding: 5PX;"><br>
+                </td>
+            </tr>
+                <tr>
+                    <td> 
+                        <label for="lname11"> Mật khẩu </label><br> 
+                    </td>
+                    <td>
+                        <input type="text" id="lname11" name="lname11" placeholder=" Mật khẩu "style="padding: 5PX;"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="lname111"> Nhập lại mật khẩu </label><br> 
+                    </td>
+                    <td>
+                        <input type="text" id="lname111" name="lname111" placeholder=" Nhập lại mật khẩu" style="padding: 5PX;"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Giới tính 
+                    </td>
+                    <td>
+                          <input type="radio" id="html" name="fav_language" value="HTML">
+                          <label for="html"> Nam </label><br>
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css"> Nữ </label><br>
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                          <label for="javascript"> Khác </label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Địa chỉ
+                    </td>
+                    <td>
+                        <textarea name="message" style="width:200px; height:100px;"></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ngày sinh
+                    </td>
+                    <td>
+                        <select id="day" name="day"style="padding: 2PX;">
+                            <option value="Ngày" selected>1</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">4</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                        <select id="Tháng" name="Tháng"style="padding: 2PX;">
+                            <option value="Tháng" selected>1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">4</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id=" Năm" name="Năm"style="padding: 2PX;" >
+                            <option value="Năm" selected>2001</option>
+                            <option value="1">2001</option>
+                            <option value="2">2002</option>
+                            <option value="3">2003</option>
+                            <option value="4">2004</option>
+                            <option value="5">2005</option>
+                            <option value="6">2006</option>
+                            <option value="7">2007</option>
+                            <option value="8">2008</option>
+                            <option value="9">2009</option>
+                            <option value="10">2010</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Avata
+                    </td>
+                    <td>
+                        <input type="file" value="Choose File"style="padding: 2PX;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sở thích
+                    </td>
+                    <td>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Xem phim </label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Thể thao </label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Trò chơi </label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"> <input type="reset" value="Reset"> <input type="submit" value="Ok"> </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
