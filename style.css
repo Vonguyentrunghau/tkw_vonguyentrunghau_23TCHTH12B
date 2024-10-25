@@ -1,22 +1,7 @@
-ol {
-  margin-left: -40px;
-  margin-top: -20px;
-  list-style-position: inside;
-}
-
-/* Write your CSS below, don't change the rules above. */
-p{
-  color: red;
-}
-.note{
-  font-size: 20px;
-}
-#id-selector-demo{
-  color: green;
-}
-li[value="4"]{
-  color: blue;
-}
-*{
-  text-align: center;
-}
+table, tr, td {
+    border: 1px solid black;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
