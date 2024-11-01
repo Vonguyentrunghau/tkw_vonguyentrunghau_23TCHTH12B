@@ -1,64 +1,62 @@
+<!-- 
+  TODO: Create a motivational post website.
+Tạo kiểu theo ý thích của bạn.
+Hãy xem hình ảnh mục tiêu để lấy cảm hứng.
+Nhưng nó phải có các tính năng sau:
+1. Văn bản trong h1 sử dụng phông chữ "Libre Baskerville" Regular từ Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. Chữ màu trắng và nền màu đen.
+3. Thêm hình ảnh trong thử mục imgages trong thư mục assets. Hình ảnh phải có viền 5px màu trắng.
+4. Văn bản được canh giữa.
+5. Tạo thẻ div chữa các đối tượng h1, p và img. Điều chỉnh lề sao cho hình ảnh 
+và văn bản được căn giữa trên trang.
+  Gợi ý: Bạn căn giữa đối tượng div theo chiều ngang bằng cách đặt chiều rộng là 50% (hoặc kích thước cố định)
+   và lề trái là 25% (hoặc sử dụng margin:auto).
+  Gợi ý: Đặt chiều rộng của hình ảnh là 100% để nó lấp đầy div.
+6. Đọc về thuộc tính text-transform trên tài liệu MDN để làm cho h1 viết hoa bằng CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="vi">
+<head>
     <meta charset="UTF-8" />
-    <title>CSS Properties</title>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Post</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
     <style>
-      body {
-        background-color: cornflowerblue;
-        color: white;
-        font-size: 18px;
-      }
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Libre Baskerville', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+        }
 
-     
-      p.color {
-    color: coral; 
-}
+        .container {
+            width: 50%;
+            text-align: center;
+            margin: auto; 
+        }
 
+        h1 {
+            text-transform: uppercase;
+        }
 
-p.font-size {
-    font-size: 2rem; 
-}
-
-p.font-weight {
-    font-weight: 900; 
-}
-
-p.font-family {
-    font-family: 'Caveat', cursive; 
-    font-weight: 400; 
-}
-
-
-p.text-align {
-    text-align: right; 
-}
-
-html {
-    font-size: 30px; 
-
-}
-
+        img {
+            width: 100%; 
+            border: 5px solid white; 
+        }
     </style>
-  </head>
-
-  <body>
-    <h1>Important CSS Properties</h1>
-    
-    <p class="color">Color</p>
-<p class="font-size">Font Size</p>
-<p class="font-weight">Font Weight</p>
-<p class="font-family">Font Family</p>
-<p class="text-align">Text Align</p>
-
-    <!-- TODOs
-  1. Đổi màu của <p>Color</p> thành màu "coral".
-  2. Đổi font size của <p>Font Size</p> thành 2X kích thước của font size root.
-  3. Đổi font weight của <p>Font Weight</p> thành 900.
-  4. Đổi font family của <p>Font Family</p> thành Google font Caveat với regular (400) font weight.
-  Link: https://fonts.google.com/specimen/Caveat
-  5. Đổi <p>Text Align</p> thành right align.
-  6. Đổi root (html element) font size thành 30px -->
-  </body>
+</head>
+<body>
+    <div class="container">
+      <img src="assets/images/daenerys.jpeg" alt="Motivational Image">
+        <h1>THAT SPECIAL MOMENT</h1>
+        <p>đẹp trai vô cùng tận</p>
+        
+    </div>
+</body>
 </html>
